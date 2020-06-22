@@ -10,7 +10,7 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{18034FBD-3232-44BD-951D-4B2F98E2304E}</ProjectGuid>
+    <ProjectGuid>{3A014DC8-692E-4502-91AA-4F4008DCF8B7}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -264,6 +264,13 @@
     <Content Include="Scripts\popper.js.map" />
     <Content Include="Scripts\popper-utils.min.js.map" />
     <Content Include="Scripts\popper-utils.js.map" />
+    <Content Include="WebConnectionStrings.config" />
+    <Content Include="WebConnectionStrings.Debug.config">
+      <DependentUpon>WebConnectionStrings.config</DependentUpon>
+    </Content>
+    <Content Include="WebConnectionStrings.Release.config">
+      <DependentUpon>WebConnectionStrings.config</DependentUpon>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
@@ -329,13 +336,6 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.5.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.5.1.min.map" />
-    <Content Include="WebConnectionStrings.config" />
-    <Content Include="WebConnectionStrings.Debug.config">
-      <DependentUpon>WebConnectionStrings.config</DependentUpon>
-    </Content>
-    <Content Include="WebConnectionStrings.Release.config">
-      <DependentUpon>WebConnectionStrings.config</DependentUpon>
-    </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -351,7 +351,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DBSystem\DBSystem.csproj">
-      <Project>{52b68f8a-f586-4314-b0fa-83bab31f0e2d}</Project>
+      <Project>{5772fd77-fb10-4c7c-b58f-70762ecb309c}</Project>
       <Name>DBSystem</Name>
     </ProjectReference>
   </ItemGroup>
@@ -369,9 +369,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>52499</DevelopmentServerPort>
+          <DevelopmentServerPort>59045</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:52499/</IISUrl>
+          <IISUrl>http://localhost:59045/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
